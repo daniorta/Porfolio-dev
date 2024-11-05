@@ -1,0 +1,57 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+    {
+        date: "Abril 2024",
+        title: "Iron hack",
+        company: "Iron hack",
+        description:" Desarrollar múltiples proyectos, utilizando  HTML, CSS y JavaScript  con framework Vue.js, pruebas de optimización, trabajo en equipo así como resolución de problemas y la gestión del tiempo de cada proyecto.",
+        link:"https://github.com/daniorta"
+    },
+
+    {
+        date: "Actualmente...",
+        title: "Amazon Engineer",
+        company: "Amazon",
+        description:
+            "Realización de tareas tales como, programacion y detección de fallas en la logica en Variadores, Plc, intervención en resolver incidencias en equipos técnicos con buses de comunicación, Ethernet, Profibus, Asi-3/5 al igual en equipos como: Plc, Robot, Drives o tecnologías asociadas con el Site. Planificación y estudios de mejora, así como la ejecución y la participación en múltiples proyectos .",
+    },
+    {
+        date: "Mayo 2022",
+        title: " Ingeniero Técnico Industrial",
+        company: "Cosentino",
+        description:
+            " Desempeñar funciones de mecatrónica industrial, programación y detección de fallas en la lógica en Variadores, controladores de temperatura, Plc,  resolver incidencias en equipos técnicos con buses de comunicación, Ethernet, Profibus, Asi-3/5 al igual en equipos como: Plc, Robot, Drives o tecnologías asociadas ",
+    },
+    {
+        date: "Junio 2018",
+        title: " Senior Ingeniero Industrial",
+        company: "Tomas Guerrero",
+        description:
+            "Gestión del mantenimiento industrial en industria de alimentación con más de 8 técnicos y más de 4 empresas externas a cargo. Del mismo modo, realizaba tareas de mantenimiento industrial, organización de paradas y trabajos organizados, solventado las incidencias a la mayor brevedad posible, trabajos en equipo, gestión del tiempo, proactividad, resolutivo, resiliencia. Así como la intervención en resolver incidencias en equipos técnicos con buses de comunicación, Ethernet, Profibus, Asi-3/5, variadores de frecuencia, Plcs, controladores de presión.",
+    },
+
+    {
+        date: "Marzo 2015",
+        title: "Técnico Industrial",
+        company: "Procavi",
+        description:
+            "Desempeñar funciones de mecatrónica industrial, tanto eléctricas, mecánicas y neumáticas solventado las incidencias a la mayor brevedad posible, trabajos en equipo, gestión del tiempo, proactividad, resolutivo, resiliencia. Realizar tareas de mantenimiento industrial, predictivas, preventivos y correctivos, así como la intervención en resolver incidencias en equipos técnicos con buses de comunicación, Ethernet, Profibus, variadores de frecuencia, sistemas de transporte, robot de almacenajes, sistemas de presión",
+    },
+];
+---
+
+
+<ol class="relative border-s border-gray-200 ml-3">
+    {
+        EXPERIENCE.map((experience) => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...experience} />
+            </li>
+        ))
+    }
+
+</ol>
+
+
+   
